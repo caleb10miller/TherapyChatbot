@@ -36,6 +36,18 @@ This project implements an AI-powered chatbot that engages in meaningful convers
    python src/main.py
    ```
 
+## Chatbot Interface
+
+The chatbot provides a simple command-line interface for therapeutic conversations:
+
+- Start a conversation with the chatbot
+- Share your thoughts and feelings
+- Receive empathetic responses using CBT techniques
+- Get response quality evaluations
+- Save and load conversation history
+
+Note: The chatbot currently uses the base GPT-3.5 Turbo model. Once fine-tuning is complete, it will be updated to use the fine-tuned model for improved therapeutic responses.
+
 ## Fine-tuning
 
 To fine-tune the model on your own data:
@@ -49,6 +61,12 @@ To fine-tune the model on your own data:
    ```bash
    python src/training/finetune_gpt.py
    ```
+
+After fine-tuning is complete, update your `.env` file with the fine-tuned model name:
+```
+OPENAI_API_KEY=your_api_key_here
+MODEL_NAME=ft:gpt-3.5-turbo:your-org:your-model-id
+```
 
 ## Project Structure
 
