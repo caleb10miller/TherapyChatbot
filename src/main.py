@@ -9,6 +9,7 @@ sys.path.append(project_root)
 from dotenv import load_dotenv
 from models.gpt_model import GPTModel
 from src.inference.chatbot import TherapyChatbot
+from src.evaluation.metrics import calculate_bleu_score, calculate_rouge_scores
 
 def main():
     # Load environment variables
@@ -41,10 +42,19 @@ def main():
         response = chatbot.process_input(user_input)
         print(f"\nChatbot: {response}")
         
+        # Calculate BLEU and ROUGE scores
+        bleu_score = calculate_bleu_score(response, [user_input])
+        rouge_scores = calculate_rouge_scores(response, user_input)
+        
         # Evaluate response
         scores = chatbot.evaluate_response(response)
+        
+        # Display all scores
         print("\nResponse Evaluation:")
         for metric, score in scores.items():
+            print(f"{metric}: {score:.2f}")
+        print(f"BLEU score: {bleu_score:.2f}")
+        for metric, score in rouge_scores.items():
             print(f"{metric}: {score:.2f}")
 
 if __name__ == "__main__":

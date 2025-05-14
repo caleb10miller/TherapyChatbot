@@ -17,3 +17,7 @@ tqdm>=4.65.0
 # Jupyter
 jupyter>=1.0.0
 notebook>=6.5.0
+
+# Evaluation metrics
+nltk>=3.8.0
+rouge-score>=0.1.2
