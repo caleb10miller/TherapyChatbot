@@ -1,0 +1,78 @@
+{
+  "model_name": "ft:gpt-3.5-turbo-0125:personal::BWtfMrrB",
+  "session_start": "2025-05-14T21:06:45.797000",
+  "session_end": "2025-05-14T21:07:54.929775",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "hi i am sad my hamster died",
+      "timestamp": "2025-05-14T21:06:52.277290"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear that. How long did you have him?",
+      "timestamp": "2025-05-14T21:06:54.637071",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "2 days i didnt think he would die so soon",
+      "timestamp": "2025-05-14T21:07:08.716458"
+    },
+    {
+      "role": "assistant",
+      "content": "That's so sad. I'm sorry.",
+      "timestamp": "2025-05-14T21:07:10.786517",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "how can i move on",
+      "timestamp": "2025-05-14T21:07:40.551448"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm not sure. I've never had a hamster. I would say just give it time.",
+      "timestamp": "2025-05-14T21:07:43.232776",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-14T21:06:53.822280",
+      "scores": {
+        "empathy": 1.0,
+        "clarity": 1.0,
+        "cbt_technique": 1.0,
+        "supportiveness": 1.0
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-14T21:07:09.626267",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-14T21:07:42.074745",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.3333333333333333,
+    "clarity": 0.3333333333333333,
+    "cbt_technique": 0.3333333333333333,
+    "supportiveness": 0.3333333333333333
+  }
+}

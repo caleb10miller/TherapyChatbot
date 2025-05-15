@@ -1,0 +1,57 @@
+{
+  "model_name": "gpt-3.5-turbo",
+  "session_start": "2025-05-14T21:05:42.156006",
+  "session_end": "2025-05-14T21:06:28.957514",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "hi i am sad because my hamster died",
+      "timestamp": "2025-05-14T21:05:58.239013"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm so sorry to hear about your hamster. Losing a pet can be really tough. It's okay to feel sad and it's important to take the time to grieve. Remember all the happy memories you shared with your hamster and know that they are now at peace. If you need someone to talk to or support, don't hesitate to reach out to friends, family, or a counselor. Take care of yourself during this difficult time.",
+      "timestamp": "2025-05-14T21:06:00.402817",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "its okay he was a fealon",
+      "timestamp": "2025-05-14T21:06:12.153626"
+    },
+    {
+      "role": "assistant",
+      "content": "I understand that losing a pet can still be difficult, regardless of the circumstances. It's okay to feel sad and to grieve the loss of your hamster. Take care of yourself and remember the happy moments you shared with your pet. If you need someone to talk to or support, don't hesitate to reach out. Take care.",
+      "timestamp": "2025-05-14T21:06:13.516306",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-14T21:05:59.687627",
+      "scores": {
+        "empathy": 1.0,
+        "clarity": 1.0,
+        "cbt_technique": 0.5,
+        "supportiveness": 1.0
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-14T21:06:12.932664",
+      "scores": {
+        "empathy": 1.0,
+        "clarity": 1.0,
+        "cbt_technique": 1.0,
+        "supportiveness": 1.0
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 1.0,
+    "clarity": 1.0,
+    "cbt_technique": 0.75,
+    "supportiveness": 1.0
+  }
+}
