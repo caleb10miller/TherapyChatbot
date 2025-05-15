@@ -1,0 +1,78 @@
+{
+  "model_name": "ft:gpt-3.5-turbo-0125:personal::BWtfMrrB",
+  "session_start": "2025-05-14T19:53:52.627347",
+  "session_end": "2025-05-14T19:54:40.780164",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am sad because the sky is green today",
+      "timestamp": "2025-05-14T19:53:58.853428"
+    },
+    {
+      "role": "assistant",
+      "content": "I understand this is difficult. Could you tell me more about how this situation is affecting you?",
+      "timestamp": "2025-05-14T19:54:05.670427",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "it is making it feel gloomy and sad. i also lost my phone yesterday.",
+      "timestamp": "2025-05-14T19:54:21.087600"
+    },
+    {
+      "role": "assistant",
+      "content": "I am sorry to hear that. I hope you find it soon!",
+      "timestamp": "2025-05-14T19:54:23.201129",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "how can i improve how i feel",
+      "timestamp": "2025-05-14T19:54:31.810106"
+    },
+    {
+      "role": "assistant",
+      "content": "I am sorry to hear that.",
+      "timestamp": "2025-05-14T19:54:33.817702",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-14T19:54:05.669824",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-14T19:54:23.201026",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-14T19:54:33.817501",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.0,
+    "clarity": 0.0,
+    "cbt_technique": 0.0,
+    "supportiveness": 0.0
+  }
+}

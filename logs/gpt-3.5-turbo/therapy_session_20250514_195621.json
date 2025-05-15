@@ -1,0 +1,53 @@
+{
+  "model_name": "gpt-3.5-turbo",
+  "session_start": "2025-05-14T19:56:21.358440",
+  "session_end": "2025-05-14T19:57:41.629313",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am sad my car got broken into",
+      "timestamp": "2025-05-14T19:56:27.507946"
+    },
+    {
+      "role": "assistant",
+      "content": "I can imagine how upsetting it must be to discover that your car was broken into. It's completely understandable to feel sad and violated in this situation.\n\nCognitive Distortions:\n- Emotional reasoning: Assuming that because you feel sad, the situation must be entirely negative.\n\nIt's important to remember that while this experience is distressing, it doesn't define your overall safety or worth. Have you noticed any thoughts like \"I'll never feel safe again\" or \"I can't trust anyone\"?\n\nOne action you can take right now is to reach out to your support system for comfort and guidance. Would you be willing to call a friend or family member to talk about how you're feeling and get some perspective on the situation?",
+      "timestamp": "2025-05-14T19:56:29.179902"
+    },
+    {
+      "role": "user",
+      "content": "i already did and it made me mad",
+      "timestamp": "2025-05-14T19:57:15.013361"
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that you're feeling frustrated after trying something. It sounds like you're feeling upset about the outcome. This could be an example of emotional reasoning, where your emotions are influencing your thoughts. \n\nLet's challenge this together. Can we explore if there were any positives or neutral aspects in the situation that might be getting overlooked? Is there another way to interpret what happened that might not lead to anger?\n\nOne action you can try right now is to write down three things that went well or were neutral about the situation that made you mad. This can help balance out your perspective. Will you give this a try?",
+      "timestamp": "2025-05-14T19:57:16.822938"
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-14T19:56:29.179886",
+      "scores": {
+        "empathy": 1.0,
+        "clarity": 1.0,
+        "cbt_technique": 1.0,
+        "supportiveness": 1.0
+      }
+    },
+    {
+      "timestamp": "2025-05-14T19:57:16.822920",
+      "scores": {
+        "empathy": 1.0,
+        "clarity": 1.0,
+        "cbt_technique": 1.0,
+        "supportiveness": 1.0
+      }
+    }
+  ],
+  "average_scores": {
+    "empathy": 1.0,
+    "clarity": 1.0,
+    "cbt_technique": 1.0,
+    "supportiveness": 1.0
+  }
+}

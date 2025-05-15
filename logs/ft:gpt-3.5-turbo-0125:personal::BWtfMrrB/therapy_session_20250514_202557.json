@@ -1,0 +1,36 @@
+{
+  "model_name": "ft:gpt-3.5-turbo-0125:personal::BWtfMrrB",
+  "session_start": "2025-05-14T20:25:57.939891",
+  "session_end": "2025-05-14T20:26:22.927990",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am very sad i lost my job",
+      "timestamp": "2025-05-14T20:26:03.523101"
+    },
+    {
+      "role": "assistant",
+      "content": "i am very sad i lost my job",
+      "timestamp": "2025-05-14T20:26:08.663476",
+      "is_echo": true
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-14T20:26:08.663225",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      },
+      "is_echo": true
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.0,
+    "clarity": 0.0,
+    "cbt_technique": 0.0,
+    "supportiveness": 0.0
+  }
+}

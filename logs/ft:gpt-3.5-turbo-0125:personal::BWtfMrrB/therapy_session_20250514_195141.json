@@ -1,0 +1,53 @@
+{
+  "model_name": "ft:gpt-3.5-turbo-0125:personal::BWtfMrrB",
+  "session_start": "2025-05-14T19:51:41.459911",
+  "session_end": "2025-05-14T19:52:04.754899",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i got in a car accident i am very upset",
+      "timestamp": "2025-05-14T19:51:47.539461"
+    },
+    {
+      "role": "assistant",
+      "content": "i got in a car accident i am very upset",
+      "timestamp": "2025-05-14T19:51:50.731419"
+    },
+    {
+      "role": "user",
+      "content": "what can i do to fix this",
+      "timestamp": "2025-05-14T19:51:56.591300"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear that.  What happened?",
+      "timestamp": "2025-05-14T19:51:59.375897"
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-14T19:51:50.731397",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-05-14T19:51:59.375886",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      }
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.0,
+    "clarity": 0.0,
+    "cbt_technique": 0.0,
+    "supportiveness": 0.0
+  }
+}

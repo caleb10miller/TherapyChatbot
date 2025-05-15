@@ -1,0 +1,120 @@
+{
+  "model_name": "ft:gpt-3.5-turbo-0125:personal::BWtfMrrB",
+  "session_start": "2025-05-14T20:27:05.166811",
+  "session_end": "2025-05-14T20:28:28.325310",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am so sad that my hamster got arrested",
+      "timestamp": "2025-05-14T20:27:11.948207"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear that. What did he do?",
+      "timestamp": "2025-05-14T20:27:14.438379",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "his girl got in trouble with the law so he showed up and went crazy",
+      "timestamp": "2025-05-14T20:27:32.462084"
+    },
+    {
+      "role": "assistant",
+      "content": "Oh no! That's terrible. I hope he gets out soon.",
+      "timestamp": "2025-05-14T20:27:35.525076",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "me too",
+      "timestamp": "2025-05-14T20:27:55.397666"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sure he's just scared. He'll be okay.",
+      "timestamp": "2025-05-14T20:27:57.866949",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "he shot 3 officers",
+      "timestamp": "2025-05-14T20:28:10.255963"
+    },
+    {
+      "role": "assistant",
+      "content": "Oh no! That's terrible. I hope he gets out soon.",
+      "timestamp": "2025-05-14T20:28:12.549600",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "he probably wont and probably shouldn't",
+      "timestamp": "2025-05-14T20:28:22.800674"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sure he's just scared. He'll be okay.",
+      "timestamp": "2025-05-14T20:28:24.824468",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-14T20:27:13.388986",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-14T20:27:34.289481",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-14T20:27:57.236760",
+      "scores": {
+        "empathy": 1.0,
+        "clarity": 1.0,
+        "cbt_technique": 1.0,
+        "supportiveness": 1.0
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-14T20:28:11.407255",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-14T20:28:24.165832",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.2,
+    "clarity": 0.2,
+    "cbt_technique": 0.2,
+    "supportiveness": 0.2
+  }
+}

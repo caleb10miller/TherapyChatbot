@@ -30,32 +30,39 @@ def main():
     # Start conversation
     print(chatbot.start_conversation())
     
-    # Main conversation loop
-    while True:
-        user_input = input("\nYou: ").strip()
-        
-        if user_input.lower() in ['quit', 'exit', 'bye']:
-            print("\nChatbot: Goodbye! Take care of yourself.")
-            break
-        
-        # Get response
-        response = chatbot.process_input(user_input)
-        print(f"\nChatbot: {response}")
-        
-        # Calculate BLEU and ROUGE scores
-        bleu_score = calculate_bleu_score(response, [user_input])
-        rouge_scores = calculate_rouge_scores(response, user_input)
-        
-        # Evaluate response
-        scores = chatbot.evaluate_response(response)
-        
-        # Display all scores
-        print("\nResponse Evaluation:")
-        for metric, score in scores.items():
-            print(f"{metric}: {score:.2f}")
-        print(f"BLEU score: {bleu_score:.2f}")
-        for metric, score in rouge_scores.items():
-            print(f"{metric}: {score:.2f}")
+    try:
+        # Main conversation loop
+        while True:
+            user_input = input("\nYou: ").strip()
+            
+            if user_input.lower() in ['quit', 'exit', 'bye']:
+                print("\nChatbot: Goodbye! Take care of yourself.")
+                break
+            
+            # Get response
+            response = chatbot.process_input(user_input)
+            print(f"\nChatbot: {response}")
+            
+            # Calculate BLEU and ROUGE scores
+            bleu_score = calculate_bleu_score(response, [user_input])
+            rouge_scores = calculate_rouge_scores(response, user_input)
+            
+            # Evaluate response
+            scores = chatbot.evaluate_response(response)
+            
+            # Display all scores
+            print("\nResponse Evaluation:")
+            for metric, score in scores.items():
+                print(f"{metric}: {score:.2f}")
+            print(f"BLEU score: {bleu_score:.2f}")
+            for metric, score in rouge_scores.items():
+                print(f"{metric}: {score:.2f}")
+    
+    finally:
+        # Save the conversation when it ends (either normally or due to an error)
+        if chatbot.conversation_history:
+            log_file = chatbot.save_conversation()
+            print(f"\nConversation saved to: {log_file}")
 
 if __name__ == "__main__":
     main() 

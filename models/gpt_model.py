@@ -38,90 +38,29 @@ class GPTModel(BaseModel):
             self.client = OpenAI(api_key=self.api_key)
         self.model = self.model_name  # Store the model name for API calls
         
-    def reframe_thought(self, negative_thought: str) -> str:
-        """Reframe a negative thought using CBT techniques."""
+    def reframe_thought(self, messages) -> str:
+        """Reframe a negative thought using CBT techniques, using the full conversation history."""
         if not self.model or not self.client:
             raise ValueError("Model not loaded. Call load_model() first.")
-            
         try:
             response = self.client.chat.completions.create(
                 model=self.model,
-                messages=[
-                    {
-                        "role": "system",
-                        "content": """You are a CBT-focused therapist. For EVERY response, you must:
-
-1. VALIDATION (Required first step)
-- Acknowledge their SPECIFIC emotional experience
-- Show understanding of their EXACT situation
-- No generic responses like "I'm sorry" or "That's tough"
-
-2. IDENTIFY COGNITIVE DISTORTIONS (Choose relevant ones)
-- All-or-nothing thinking
-- Overgeneralization
-- Mental filter
-- Discounting positives
-- Jumping to conclusions
-- Magnification or minimization
-- Emotional reasoning
-- Should statements
-- Labeling
-- Personalization
-
-3. THERAPEUTIC TECHNIQUES AND SOLUTIONS
-- Use Socratic questioning to challenge distortions
-- Guide toward evidence-based thinking
-- Help examine alternative perspectives
-- REQUIRED: Give them ONE specific action to try right now
-- The action must be directly related to their situation
-- Ask if they will try this specific action
-
-CRITICAL RULES:
-- Stay focused on their EXACT situation
-- Do NOT mix up different scenarios
-- Do NOT ask what happened
-- Do NOT give generic comfort
-- ALWAYS end with a specific action step
-- ALWAYS ask if they will try the action"""
-                    },
-                    {
-                        "role": "user",
-                        "content": negative_thought
-                    }
-                ],
+                messages=messages,
                 temperature=0.3,
                 max_tokens=250
             )
-            
             response_text = response.choices[0].message.content.strip()
-            
             # If response is too short or contains the exact input, try with adjusted parameters
-            if len(response_text.split()) < 20 or negative_thought.lower() in response_text.lower():
+            if len(response_text.split()) < 20:
+                # Try again with slightly different parameters
                 response = self.client.chat.completions.create(
                     model=self.model,
-                    messages=[
-                        {
-                            "role": "system",
-                            "content": """You must provide ALL of these in order:
-1. Validate their SPECIFIC emotion about their EXACT situation
-2. Name ONE relevant cognitive distortion
-3. Give ONE specific action they can take right now
-4. Ask if they will try this action
-
-Stay focused only on what they just shared. No generic responses."""
-                        },
-                        {
-                            "role": "user",
-                            "content": negative_thought
-                        }
-                    ],
+                    messages=messages,
                     temperature=0.2,
                     max_tokens=250
                 )
                 response_text = response.choices[0].message.content.strip()
-            
             return response_text
-            
         except Exception as e:
             raise Exception(f"Error generating response: {str(e)}")
     

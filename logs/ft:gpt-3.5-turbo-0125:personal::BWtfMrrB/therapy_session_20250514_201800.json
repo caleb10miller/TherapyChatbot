@@ -1,0 +1,57 @@
+{
+  "model_name": "ft:gpt-3.5-turbo-0125:personal::BWtfMrrB",
+  "session_start": "2025-05-14T20:18:00.389167",
+  "session_end": "2025-05-14T20:18:36.522439",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am sad i lost my job",
+      "timestamp": "2025-05-14T20:18:04.724108"
+    },
+    {
+      "role": "assistant",
+      "content": "I am sorry to hear that.  What happened?",
+      "timestamp": "2025-05-14T20:18:07.038298",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "i got fired for flirting with the HR lady",
+      "timestamp": "2025-05-14T20:18:19.408622"
+    },
+    {
+      "role": "assistant",
+      "content": "I am sorry to hear that.  What happened?",
+      "timestamp": "2025-05-14T20:18:21.517603",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-14T20:18:07.038114",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-14T20:18:21.517521",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.0,
+    "clarity": 0.0,
+    "cbt_technique": 0.0,
+    "supportiveness": 0.0
+  }
+}

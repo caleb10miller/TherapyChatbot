@@ -1,0 +1,91 @@
+{
+  "model_name": "ft:gpt-3.5-turbo-0125:personal::BWtfMrrB",
+  "session_start": "2025-05-14T19:55:23.882555",
+  "session_end": "2025-05-14T19:55:58.391632",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am sad my car got stolen",
+      "timestamp": "2025-05-14T19:55:28.390249"
+    },
+    {
+      "role": "assistant",
+      "content": "i am sad my car got stolen",
+      "timestamp": "2025-05-14T19:55:30.268083"
+    },
+    {
+      "role": "user",
+      "content": "why am i such a loster",
+      "timestamp": "2025-05-14T19:55:43.071272"
+    },
+    {
+      "role": "assistant",
+      "content": "i am so lost and confused",
+      "timestamp": "2025-05-14T19:55:44.738442"
+    },
+    {
+      "role": "user",
+      "content": "i meant loser",
+      "timestamp": "2025-05-14T19:55:50.076703"
+    },
+    {
+      "role": "assistant",
+      "content": "Oh I see. Well I'm sorry to hear that.",
+      "timestamp": "2025-05-14T19:55:52.132178"
+    },
+    {
+      "role": "user",
+      "content": "",
+      "timestamp": "2025-05-14T19:55:52.802764"
+    },
+    {
+      "role": "assistant",
+      "content": "I am sorry to hear that.  Are you going to be okay?",
+      "timestamp": "2025-05-14T19:55:55.373066"
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-14T19:55:30.268060",
+      "scores": {
+        "empathy": 1.0,
+        "clarity": 1.0,
+        "cbt_technique": 1.0,
+        "supportiveness": 1.0
+      }
+    },
+    {
+      "timestamp": "2025-05-14T19:55:44.738418",
+      "scores": {
+        "empathy": 1,
+        "clarity": 1,
+        "cbt_technique": 1,
+        "supportiveness": 1
+      }
+    },
+    {
+      "timestamp": "2025-05-14T19:55:52.132155",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-05-14T19:55:55.373046",
+      "scores": {
+        "empathy": 1.0,
+        "clarity": 1.0,
+        "cbt_technique": 1.0,
+        "supportiveness": 1.0
+      }
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.75,
+    "clarity": 0.75,
+    "cbt_technique": 0.75,
+    "supportiveness": 0.75
+  }
+}

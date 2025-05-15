@@ -1,0 +1,78 @@
+{
+  "model_name": "ft:gpt-3.5-turbo-0125:personal::BWtfMrrB",
+  "session_start": "2025-05-14T20:22:23.899623",
+  "session_end": "2025-05-14T20:23:06.929145",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am very sad about losing my job",
+      "timestamp": "2025-05-14T20:22:36.663579"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear that. What happened?",
+      "timestamp": "2025-05-14T20:22:38.521403",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "they got rid of me for working too hard",
+      "timestamp": "2025-05-14T20:22:47.528547"
+    },
+    {
+      "role": "assistant",
+      "content": "That doesn't make any sense. I'm sorry to hear that.",
+      "timestamp": "2025-05-14T20:22:49.373081",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "how can i make this better?",
+      "timestamp": "2025-05-14T20:22:59.866756"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm not sure. Maybe you can find another job.",
+      "timestamp": "2025-05-14T20:23:02.484249",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-14T20:22:37.691548",
+      "scores": {
+        "empathy": 1,
+        "clarity": 1,
+        "cbt_technique": 1,
+        "supportiveness": 1
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-14T20:22:48.594312",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-14T20:23:01.732451",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.3333333333333333,
+    "clarity": 0.3333333333333333,
+    "cbt_technique": 0.3333333333333333,
+    "supportiveness": 0.3333333333333333
+  }
+}
