@@ -1,0 +1,14 @@
+{
+  "model_name": "gpt-3.5-turbo",
+  "session_start": "2025-05-21T21:12:38.993655",
+  "session_end": "2025-05-21T21:12:46.301924",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am sad because my friend called me ugly",
+      "timestamp": "2025-05-21T21:12:46.301287"
+    }
+  ],
+  "session_scores": [],
+  "average_scores": {}
+}

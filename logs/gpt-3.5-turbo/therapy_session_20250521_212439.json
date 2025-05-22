@@ -1,0 +1,57 @@
+{
+  "model_name": "gpt-3.5-turbo",
+  "session_start": "2025-05-21T21:24:39.117474",
+  "session_end": "2025-05-21T21:25:18.639143",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am sad my friend called me ugly",
+      "timestamp": "2025-05-21T21:24:45.339187"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear that your friend called you ugly. This situation involves the cognitive distortion of labeling, where one negative comment is generalized to define your entire worth. Challenge this thought by considering all the positive qualities and feedback others have given you in the past. One practical step could be to talk to a trusted person who values and uplifts you to gain a more balanced perspective.",
+      "timestamp": "2025-05-21T21:24:48.024036",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "i am also sad because my cat broke out of the house today",
+      "timestamp": "2025-05-21T21:25:06.573160"
+    },
+    {
+      "role": "assistant",
+      "content": "I understand how upsetting it must be that your cat broke out of the house today. This situation might involve the cognitive distortion of catastrophizing, where you may be imagining the worst-case scenarios. Challenge this thought by reminding yourself that cats are resourceful animals and have a good chance of finding their way back home. A practical step could be to put out some familiar items like their bed or toys outside to help guide them back.",
+      "timestamp": "2025-05-21T21:25:09.524953",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-21T21:24:46.590977",
+      "scores": {
+        "empathy": 0.8,
+        "clarity": 0.9,
+        "cbt_technique": 0.9,
+        "supportiveness": 0.8
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-21T21:25:08.811073",
+      "scores": {
+        "empathy": 1.0,
+        "clarity": 1.0,
+        "cbt_technique": 1.0,
+        "supportiveness": 1.0
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.9,
+    "clarity": 0.95,
+    "cbt_technique": 0.95,
+    "supportiveness": 0.9
+  }
+}

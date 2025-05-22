@@ -42,22 +42,40 @@ class GPTModel(BaseModel):
         """Reframe a negative thought using CBT techniques, using the full conversation history."""
         if not self.model or not self.client:
             raise ValueError("Model not loaded. Call load_model() first.")
+            
+        # Only add system prompt for non-fine-tuned models
+        if not self.model.startswith("ft:") and not any(msg.get("role") == "system" for msg in messages):
+            messages.insert(0, {
+                "role": "system",
+                "content": """You are a CBT assistant that helps users reframe negative thoughts using cognitive behavioral therapy techniques. You are NOT a therapist or medical professional.
+
+Your task is to:
+1. Briefly acknowledge the user's feeling (1 sentence)
+2. Identify one cognitive distortion (1 sentence)
+3. Help them challenge that thought (1-2 sentences)
+4. Suggest one practical step (1 sentence)
+
+Keep responses under 5 sentences total. Focus on practical CBT techniques and thought reframing. If the user needs professional help, briefly acknowledge this while still providing CBT support."""
+            })
+            
         try:
             response = self.client.chat.completions.create(
                 model=self.model,
                 messages=messages,
-                temperature=0.3,
-                max_tokens=250
+                temperature=0.7,
+                max_tokens=100,
+                presence_penalty=0.6,
+                frequency_penalty=0.6
             )
             response_text = response.choices[0].message.content.strip()
             # If response is too short or contains the exact input, try with adjusted parameters
-            if len(response_text.split()) < 20:
+            if len(response_text.split()) < 10:
                 # Try again with slightly different parameters
                 response = self.client.chat.completions.create(
                     model=self.model,
                     messages=messages,
-                    temperature=0.2,
-                    max_tokens=250
+                    temperature=0.7,
+                    max_tokens=100
                 )
                 response_text = response.choices[0].message.content.strip()
             return response_text

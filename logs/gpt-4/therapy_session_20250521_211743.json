@@ -1,0 +1,36 @@
+{
+  "model_name": "gpt-4",
+  "session_start": "2025-05-21T21:17:43.600835",
+  "session_end": "2025-05-21T21:18:05.281629",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am sad my friend called me ugly",
+      "timestamp": "2025-05-21T21:17:49.110192"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm really sorry to hear that you're feeling this way, it's not nice when someone we care about says something hurtful. \n\nLet's look at the situation through the lens of cognitive behavioral therapy (CBT). The cognitive distortion at play here could be \"Personalization,\" where you are taking your friend's comment as a direct personal attack on your value or worth.\n\nIt's important to remember that people often project their own insecurities onto others, so your friend calling you \"ugly\" might say more about them than it does about you. Also, beauty is highly subjective and varies greatly from person to person.\n\nAs a practical step, consider having an open conversation with your friend about how their comment made you feel. It's possible they didn't realize the impact of their words. If they continue to be mean-spirited, however, it may be beneficial for your mental health to reconsider the level of contact you have with them.\n\nRemember also to practice self-affirmation regularly. Remind yourself each day of all the things that make you a unique and valuable person. This can help boost self-esteem and offset negative comments from others.",
+      "timestamp": "2025-05-21T21:17:59.245508",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-21T21:17:58.003096",
+      "scores": {
+        "empathy": 0.5,
+        "clarity": 0.5,
+        "cbt_technique": 0.5,
+        "supportiveness": 0.5
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.5,
+    "clarity": 0.5,
+    "cbt_technique": 0.5,
+    "supportiveness": 0.5
+  }
+}

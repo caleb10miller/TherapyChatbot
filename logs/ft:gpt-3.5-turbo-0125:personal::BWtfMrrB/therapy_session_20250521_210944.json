@@ -1,0 +1,36 @@
+{
+  "model_name": "ft:gpt-3.5-turbo-0125:personal::BWtfMrrB",
+  "session_start": "2025-05-21T21:09:44.698554",
+  "session_end": "2025-05-21T21:09:54.486695",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am sad",
+      "timestamp": "2025-05-21T21:09:47.290608"
+    },
+    {
+      "role": "assistant",
+      "content": "I am sorry to hear that. What happened?",
+      "timestamp": "2025-05-21T21:09:50.954310",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-21T21:09:49.997891",
+      "scores": {
+        "empathy": 1.0,
+        "clarity": 1.0,
+        "cbt_technique": 1.0,
+        "supportiveness": 1.0
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 1.0,
+    "clarity": 1.0,
+    "cbt_technique": 1.0,
+    "supportiveness": 1.0
+  }
+}

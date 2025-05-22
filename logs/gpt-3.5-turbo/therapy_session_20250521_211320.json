@@ -1,0 +1,36 @@
+{
+  "model_name": "gpt-3.5-turbo",
+  "session_start": "2025-05-21T21:13:20.707607",
+  "session_end": "2025-05-21T21:13:36.892833",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am sad my friend called me ugly",
+      "timestamp": "2025-05-21T21:13:26.609852"
+    },
+    {
+      "role": "assistant",
+      "content": "I understand you're feeling i am sad my friend called me ugly. Let's look at this from a different perspective. What evidence do you have that supports or contradicts this thought?",
+      "timestamp": "2025-05-21T21:13:26.610103",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-21T21:13:26.610017",
+      "scores": {
+        "empathy": 0.5,
+        "clarity": 0.7,
+        "cbt_technique": 0.8,
+        "supportiveness": 0.8
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.5,
+    "clarity": 0.7,
+    "cbt_technique": 0.8,
+    "supportiveness": 0.8
+  }
+}

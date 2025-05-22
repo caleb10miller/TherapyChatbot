@@ -1,0 +1,36 @@
+{
+  "model_name": "ft:gpt-3.5-turbo-0125:personal::BWtfMrrB",
+  "session_start": "2025-05-21T20:45:22.394185",
+  "session_end": "2025-05-21T20:45:33.312459",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am sad my cat died",
+      "timestamp": "2025-05-21T20:45:26.423166"
+    },
+    {
+      "role": "assistant",
+      "content": "I am so sorry to hear that. How long did you have your cat?",
+      "timestamp": "2025-05-21T20:45:28.113614",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-21T20:45:27.396995",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.0,
+    "clarity": 0.0,
+    "cbt_technique": 0.0,
+    "supportiveness": 0.0
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "model_name": "gpt-3.5-turbo",
+  "session_start": "2025-05-21T21:15:52.626578",
+  "session_end": "2025-05-21T21:16:20.246852",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am sad my friend called me ugly",
+      "timestamp": "2025-05-21T21:15:59.356007"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm really sorry to hear that your friend said something hurtful to you. It's completely normal to feel sad and upset when someone we care about says something unkind. It's important to remember that your worth is not defined by someone else's words or opinions.\n\nIt seems like there might be some cognitive distortions at play here, specifically mind reading (assuming what someone else is thinking) and labeling (using a negative label to describe yourself). It's important to challenge these distortions and replace them with more balanced and realistic thoughts.\n\nOne helpful CBT technique you can try is cognitive restructuring. When you notice yourself thinking \"I am ugly\" in response to your friend's comment, try to challenge this thought by asking yourself for evidence that supports and contradicts this belief. For example, think about times when you have felt good about your appearance or received compliments from others.\n\nAdditionally, it might be beneficial to have a conversation with your friend about how their words made you feel. They may not have realized the impact of their comment and discussing it openly could help improve your relationship and prevent similar situations in the future.\n\nRemember to practice self-care and surround yourself with supportive and positive influences. You are valuable and deserving of kindness, including from yourself.",
+      "timestamp": "2025-05-21T21:16:03.711534",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-21T21:16:03.062094",
+      "scores": {
+        "empathy": 1.0,
+        "clarity": 1.0,
+        "cbt_technique": 1.0,
+        "supportiveness": 1.0
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 1.0,
+    "clarity": 1.0,
+    "cbt_technique": 1.0,
+    "supportiveness": 1.0
+  }
+}
