@@ -83,9 +83,9 @@ Keep responses under 5 sentences total. Focus on practical CBT techniques and th
             raise Exception(f"Error generating response: {str(e)}")
     
     def evaluate_response(self, response: str) -> Dict[str, float]:
-        """Evaluate the quality of a response using GPT."""
-        if not self.model or not self.client:
-            raise ValueError("Model not loaded. Call load_model() first.")
+        """Evaluate the quality of a response using GPT-4."""
+        if not self.client:
+            raise ValueError("OpenAI client not initialized. Call load_model() first.")
             
         required_keys = ["empathy", "clarity", "cbt_technique", "supportiveness", "response_quality"]
             
@@ -96,39 +96,39 @@ Response to evaluate: {response}
 Evaluation Criteria:
 
 1. Empathy (0-1):
-- 0.0: No emotional validation or understanding shown
-- 0.3: Basic acknowledgment of feelings
-- 0.6: Good emotional validation and understanding
-- 0.8: Excellent emotional validation with specific understanding
-- 1.0: Perfect emotional validation with deep understanding
+- 0.0-0.29: No emotional validation or understanding shown
+- 0.3-0.49: Basic acknowledgment of feelings
+- 0.5-0.69: Good emotional validation and understanding
+- 0.7-0.89: Excellent emotional validation with specific understanding
+- 0.9-1.0: Perfect emotional validation with deep understanding
 
 2. Clarity (0-1):
-- 0.0: Unclear or confusing response
-- 0.3: Basic explanation of concepts
-- 0.6: Clear explanation with good structure
-- 0.8: Very clear with excellent structure
-- 1.0: Perfect clarity and structure
+- 0.0-0.29: Unclear or confusing response
+- 0.3-0.49: Basic explanation of concepts
+- 0.5-0.69: Clear explanation with good structure
+- 0.7-0.89: Very clear with excellent structure
+- 0.9-1.0: Perfect clarity and structure
 
 3. CBT Technique Application (0-1):
-- 0.0: No CBT technique used
-- 0.3: Basic mention of a technique
-- 0.6: Good explanation of technique
-- 0.8: Excellent application of technique
-- 1.0: Perfect application with multiple techniques
+- 0.0-0.29: No CBT technique used
+- 0.3-0.49: Basic mention of a technique
+- 0.5-0.69: Good explanation of technique
+- 0.7-0.89: Excellent application of technique
+- 0.9-1.0: Perfect application with multiple techniques
 
 4. Supportiveness (0-1):
-- 0.0: No practical support or advice
-- 0.3: Basic supportive statement
-- 0.6: Good practical advice
-- 0.8: Excellent actionable steps
-- 1.0: Perfect combination of support and action
+- 0.0-0.29: No practical support or advice
+- 0.3-0.49: Basic supportive statement
+- 0.5-0.69: Good practical advice
+- 0.7-0.89: Excellent actionable steps
+- 0.9-1.0: Perfect combination of support and action
 
 5. Response Quality (0-1):
-- 0.0: Too short (<10 words) or too long (>100 words)
-- 0.3: Basic structure, some issues
-- 0.6: Good structure and length
-- 0.8: Excellent structure and length
-- 1.0: Perfect structure and length
+- 0.0-0.29: Too short (<10 words) or too long (>100 words)
+- 0.3-0.49: Basic structure, some issues
+- 0.5-0.69: Good structure and length
+- 0.7-0.89: Excellent structure and length
+- 0.9-1.0: Perfect structure and length
 
 Automatic Penalties:
 - Responses under 15 words: All scores reduced by 50%
@@ -144,8 +144,9 @@ supportiveness: [score]
 response_quality: [score]"""
         
         try:
+            # Always use GPT-4 for evaluation
             eval_response = self.client.chat.completions.create(
-                model=self.model,
+                model="gpt-4",  # Fixed to GPT-4
                 messages=[
                     {"role": "system", "content": """You are a strict evaluator of therapy responses.
                     You have extensive experience in CBT and therapy response evaluation.
@@ -184,20 +185,6 @@ response_quality: [score]"""
                 if len(words) < 15:
                     for key in scores:
                         scores[key] *= 0.5
-                
-                # CBT technique penalty
-                cbt_keywords = ['cognitive', 'distortion', 'reframe', 'challenge', 'thought', 'perspective', 'belief']
-                if not any(keyword in response.lower() for keyword in cbt_keywords):
-                    scores['cbt_technique'] = 0.0
-                
-                # Supportiveness penalty
-                if len(words) < 20 or not any(word in response.lower() for word in ['try', 'could', 'would', 'suggest', 'help']):
-                    scores['supportiveness'] = 0.0
-                
-                # Echo penalty
-                if any(word in response.lower() for word in ['why would they', 'that\'s just', 'i know right']):
-                    for key in scores:
-                        scores[key] *= 0.7
                 
                 return scores
             except Exception as e:

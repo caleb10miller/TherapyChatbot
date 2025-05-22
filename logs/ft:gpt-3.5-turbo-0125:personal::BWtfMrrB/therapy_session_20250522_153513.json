@@ -1,0 +1,60 @@
+{
+  "model_name": "ft:gpt-3.5-turbo-0125:personal::BWtfMrrB",
+  "session_start": "2025-05-22T15:35:13.951291",
+  "session_end": "2025-05-22T15:35:50.107548",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am sad because my hamster died",
+      "timestamp": "2025-05-22T15:35:19.180951"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I was very close to him.",
+      "timestamp": "2025-05-22T15:35:23.628253",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "i am also sad because my friend called me ugly",
+      "timestamp": "2025-05-22T15:35:38.683929"
+    },
+    {
+      "role": "assistant",
+      "content": "Your friend is not a friend if they are calling you ugly. Do not listen to them.",
+      "timestamp": "2025-05-22T15:35:43.121809",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-22T15:35:21.356782",
+      "scores": {
+        "empathy": 0.15,
+        "clarity": 0.4,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0,
+        "response_quality": 0.0
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-22T15:35:40.275457",
+      "scores": {
+        "empathy": 0.3,
+        "clarity": 0.6,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.3,
+        "response_quality": 0.6
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.22499999999999998,
+    "clarity": 0.5,
+    "cbt_technique": 0.0,
+    "supportiveness": 0.15,
+    "response_quality": 0.3
+  }
+}

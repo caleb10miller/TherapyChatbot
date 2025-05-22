@@ -1,0 +1,60 @@
+{
+  "model_name": "ft:gpt-3.5-turbo-0125:personal::BWtfMrrB",
+  "session_start": "2025-05-22T15:40:02.278980",
+  "session_end": "2025-05-22T15:40:49.027149",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am sad because my hamster died",
+      "timestamp": "2025-05-22T15:40:07.723679"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm so sorry to hear that. How are you holding up?",
+      "timestamp": "2025-05-22T15:40:13.289907",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "im not well. i am also sad because my friend called me ugly",
+      "timestamp": "2025-05-22T15:40:36.594057"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm so sorry to hear about your hamster. And don't mind what your friend said, they are probably just having a bad day.",
+      "timestamp": "2025-05-22T15:40:39.972771",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-22T15:40:10.275758",
+      "scores": {
+        "empathy": 0.25,
+        "clarity": 0.35,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.15,
+        "response_quality": 0.15
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-22T15:40:37.581234",
+      "scores": {
+        "empathy": 0.5,
+        "clarity": 0.7,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.3,
+        "response_quality": 0.5
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.375,
+    "clarity": 0.5249999999999999,
+    "cbt_technique": 0.0,
+    "supportiveness": 0.22499999999999998,
+    "response_quality": 0.325
+  }
+}

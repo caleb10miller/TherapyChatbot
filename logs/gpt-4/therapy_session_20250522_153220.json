@@ -1,0 +1,60 @@
+{
+  "model_name": "gpt-4",
+  "session_start": "2025-05-22T15:32:20.468470",
+  "session_end": "2025-05-22T15:33:11.197515",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am sad because my hamster died",
+      "timestamp": "2025-05-22T15:32:25.728841"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm really sorry to hear about your hamster, it's tough to lose a pet. It sounds like you could be devaluing your emotions, implying that sadness over a pet might not be justified. Remember, it's completely normal and valid to grieve for any loss in your life, even a small pet. One practical step you can take is writing down some of the happy memories with your hamster to remind yourself of the joy he brought into your life.",
+      "timestamp": "2025-05-22T15:32:33.077254",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "i am also sad because my friend called me ugly",
+      "timestamp": "2025-05-22T15:32:58.853563"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear that your friend's comment hurt you. This is a case of emotional reasoning, where you're taking their words as a fact about yourself. It's important to remember that just because someone says something, it doesn't make it true. You can challenge this thought by reminding yourself of times when you felt good about your appearance or when other people complimented you. A practical step could be to talk to your friend about how their comment made you feel and ask for an apology if",
+      "timestamp": "2025-05-22T15:33:06.020260",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-22T15:32:31.006357",
+      "scores": {
+        "empathy": 0.8,
+        "clarity": 0.8,
+        "cbt_technique": 0.6,
+        "supportiveness": 0.8,
+        "response_quality": 0.8
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-22T15:33:03.884650",
+      "scores": {
+        "empathy": 0.6,
+        "clarity": 0.8,
+        "cbt_technique": 0.8,
+        "supportiveness": 0.6,
+        "response_quality": 0.8
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.7,
+    "clarity": 0.8,
+    "cbt_technique": 0.7,
+    "supportiveness": 0.7,
+    "response_quality": 0.8
+  }
+}

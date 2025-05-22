@@ -1,0 +1,60 @@
+{
+  "model_name": "gpt-4",
+  "session_start": "2025-05-22T15:26:44.448727",
+  "session_end": "2025-05-22T15:28:04.785228",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am sad because my hamster died",
+      "timestamp": "2025-05-22T15:27:17.618014"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm really sorry to hear about your hamster. It sounds like you might be dealing with overgeneralization, thinking that all aspects of your life are sad due to this one event. While it's completely normal and healthy to grieve, remember that sadness associated with a specific event doesn't mean everything in life is sad or will be forever. Maybe try writing down some positive things in your life to help shift the focus from this loss.",
+      "timestamp": "2025-05-22T15:27:25.511219",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "i am also sad because my friend called me ugly",
+      "timestamp": "2025-05-22T15:27:50.813888"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear that you're feeling hurt by your friend's comment. This sounds like a case of \"personalization,\" where you might be taking the comment as a reflection of your worth. Remember, one person's words don't define who you are or your value. A helpful step could be talking with your friend about how their comment made you feel, or surrounding yourself with positive affirmations about your self-worth and beauty.",
+      "timestamp": "2025-05-22T15:27:57.936458",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-22T15:27:22.479550",
+      "scores": {
+        "empathy": 0.6,
+        "clarity": 0.6,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.6,
+        "response_quality": 0.6
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-22T15:27:55.376676",
+      "scores": {
+        "empathy": 0.8,
+        "clarity": 0.8,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.6,
+        "response_quality": 0.8
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.7,
+    "clarity": 0.7,
+    "cbt_technique": 0.0,
+    "supportiveness": 0.6,
+    "response_quality": 0.7
+  }
+}
