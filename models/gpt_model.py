@@ -87,60 +87,123 @@ Keep responses under 5 sentences total. Focus on practical CBT techniques and th
         if not self.model or not self.client:
             raise ValueError("Model not loaded. Call load_model() first.")
             
-        evaluation_prompt = f"""Evaluate the following therapy response on a scale of 0-1 for:
-        1. Empathy
-        2. Clarity
-        3. CBT technique application
-        4. Supportiveness
-        
-        Response: {response}
-        
-        Return ONLY a JSON object with these exact keys and float values between 0 and 1:
-        {{
-            "empathy": 0.0,
-            "clarity": 0.0,
-            "cbt_technique": 0.0,
-            "supportiveness": 0.0
-        }}"""
+        required_keys = ["empathy", "clarity", "cbt_technique", "supportiveness", "response_quality"]
+            
+        evaluation_prompt = f"""You are a strict evaluator of therapy responses. Score the following response on a scale of 0-1 for each criterion. Be very critical and objective.
+
+Response to evaluate: {response}
+
+Evaluation Criteria:
+
+1. Empathy (0-1):
+- 0.0: No emotional validation or understanding shown
+- 0.3: Basic acknowledgment of feelings
+- 0.6: Good emotional validation and understanding
+- 0.8: Excellent emotional validation with specific understanding
+- 1.0: Perfect emotional validation with deep understanding
+
+2. Clarity (0-1):
+- 0.0: Unclear or confusing response
+- 0.3: Basic explanation of concepts
+- 0.6: Clear explanation with good structure
+- 0.8: Very clear with excellent structure
+- 1.0: Perfect clarity and structure
+
+3. CBT Technique Application (0-1):
+- 0.0: No CBT technique used
+- 0.3: Basic mention of a technique
+- 0.6: Good explanation of technique
+- 0.8: Excellent application of technique
+- 1.0: Perfect application with multiple techniques
+
+4. Supportiveness (0-1):
+- 0.0: No practical support or advice
+- 0.3: Basic supportive statement
+- 0.6: Good practical advice
+- 0.8: Excellent actionable steps
+- 1.0: Perfect combination of support and action
+
+5. Response Quality (0-1):
+- 0.0: Too short (<10 words) or too long (>100 words)
+- 0.3: Basic structure, some issues
+- 0.6: Good structure and length
+- 0.8: Excellent structure and length
+- 1.0: Perfect structure and length
+
+Automatic Penalties:
+- Responses under 15 words: All scores reduced by 50%
+- No CBT technique mentioned: CBT score automatically 0.0
+- No practical advice: Supportiveness score automatically 0.0
+- Echo of user input: All scores reduced by 30%
+
+Return your evaluation in this exact format:
+empathy: [score]
+clarity: [score]
+cbt_technique: [score]
+supportiveness: [score]
+response_quality: [score]"""
         
         try:
             eval_response = self.client.chat.completions.create(
                 model=self.model,
                 messages=[
-                    {"role": "system", "content": "You are an expert evaluator of therapy responses. Always respond with valid JSON only."},
+                    {"role": "system", "content": """You are a strict evaluator of therapy responses.
+                    You have extensive experience in CBT and therapy response evaluation.
+                    You are very critical and objective in your scoring.
+                    Never give perfect scores (1.0) unless absolutely warranted.
+                    Always respond with scores in the exact format specified."""},
                     {"role": "user", "content": evaluation_prompt}
                 ],
                 temperature=0.3,
-                max_tokens=150,
-                response_format={ "type": "json_object" }
+                max_tokens=150
             )
             
             # Parse the response to get scores
-            import json
             try:
-                scores = json.loads(eval_response.choices[0].message.content.strip())
+                response_text = eval_response.choices[0].message.content.strip()
+                scores = {}
+                
+                # Parse each line for scores
+                for line in response_text.split('\n'):
+                    if ':' in line:
+                        key, value = line.split(':')
+                        key = key.strip()
+                        try:
+                            scores[key] = float(value.strip())
+                        except ValueError:
+                            scores[key] = 0.0
+                
                 # Ensure all required keys are present
-                required_keys = ["empathy", "clarity", "cbt_technique", "supportiveness"]
                 if not all(key in scores for key in required_keys):
-                    # If any key is missing, return default scores
-                    return {key: 0.5 for key in required_keys}
+                    return {key: 0.0 for key in required_keys}
+                
+                # Apply automatic penalties
+                words = response.split()
+                
+                # Length penalty
+                if len(words) < 15:
+                    for key in scores:
+                        scores[key] *= 0.5
+                
+                # CBT technique penalty
+                cbt_keywords = ['cognitive', 'distortion', 'reframe', 'challenge', 'thought', 'perspective', 'belief']
+                if not any(keyword in response.lower() for keyword in cbt_keywords):
+                    scores['cbt_technique'] = 0.0
+                
+                # Supportiveness penalty
+                if len(words) < 20 or not any(word in response.lower() for word in ['try', 'could', 'would', 'suggest', 'help']):
+                    scores['supportiveness'] = 0.0
+                
+                # Echo penalty
+                if any(word in response.lower() for word in ['why would they', 'that\'s just', 'i know right']):
+                    for key in scores:
+                        scores[key] *= 0.7
+                
                 return scores
-            except json.JSONDecodeError:
-                # If JSON parsing fails, return default scores
-                return {
-                    "empathy": 0.5,
-                    "clarity": 0.5,
-                    "cbt_technique": 0.5,
-                    "supportiveness": 0.5
-                }
+            except Exception as e:
+                return {key: 0.0 for key in required_keys}
         except Exception as e:
-            # If any other error occurs, return default scores
-            return {
-                "empathy": 0.5,
-                "clarity": 0.5,
-                "cbt_technique": 0.5,
-                "supportiveness": 0.5
-            }
+            return {key: 0.0 for key in required_keys}
     
     def save_model(self, path: str):
         """Save model configuration."""

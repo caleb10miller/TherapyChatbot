@@ -1,0 +1,82 @@
+{
+  "model_name": "gpt-4",
+  "session_start": "2025-05-21T21:46:04.347541",
+  "session_end": "2025-05-21T21:47:06.701614",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am sad my friend called me ugly",
+      "timestamp": "2025-05-21T21:46:10.405691"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear that you're feeling this way. It sounds like you might be engaging in \"labeling\", a cognitive distortion where we assign labels to ourselves or others based on one incident. Just remember, someone's opinion doesn't define your worth or beauty. Try to challenge this thought by considering the qualities and attributes that make you unique and valuable. As a practical step, consider sharing your feelings with your friend and discuss the impact of their words on you.",
+      "timestamp": "2025-05-21T21:46:15.416827",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "yeah it is even worse becuase traffic is horrible and i am just trying to get home to my sister's bday party",
+      "timestamp": "2025-05-21T21:46:42.070794"
+    },
+    {
+      "role": "assistant",
+      "content": "I understand that the traffic and the urgency to get home can be very stressful. This thought process could be a case of \"catastrophizing\", where you're imagining the worst possible outcome. Remember, even if you're late, your sister's love for you won't change. One practical step would be to call ahead, let them know you might be late due to traffic, and use this time in traffic to listen to some calming music or a favorite podcast.",
+      "timestamp": "2025-05-21T21:46:47.208424",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "maybe i should",
+      "timestamp": "2025-05-21T21:46:56.862717"
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds like a good idea. It can help to communicate with others when you're running late so they know what's going on. Remember, everyone encounters unexpected delays sometimes and it's alright.",
+      "timestamp": "2025-05-21T21:47:00.593919",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-21T21:46:13.528619",
+      "scores": {
+        "empathy": 0.6,
+        "clarity": 0.8,
+        "cbt_technique": 0.8,
+        "supportiveness": 0.6,
+        "response_quality": 0.8
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-21T21:46:45.085692",
+      "scores": {
+        "empathy": 0.8,
+        "clarity": 0.8,
+        "cbt_technique": 0.8,
+        "supportiveness": 0.8,
+        "response_quality": 0.8
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-21T21:46:58.562728",
+      "scores": {
+        "empathy": 0.3,
+        "clarity": 0.6,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.6,
+        "response_quality": 0.6
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.5666666666666667,
+    "clarity": 0.7333333333333334,
+    "cbt_technique": 0.5333333333333333,
+    "supportiveness": 0.6666666666666666,
+    "response_quality": 0.7333333333333334
+  }
+}

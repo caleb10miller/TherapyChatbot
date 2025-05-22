@@ -1,0 +1,60 @@
+{
+  "model_name": "ft:gpt-3.5-turbo-0125:personal::BWtfMrrB",
+  "session_start": "2025-05-21T21:44:14.506412",
+  "session_end": "2025-05-21T21:44:49.641573",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am sad my friend called me ugly",
+      "timestamp": "2025-05-21T21:44:20.858149"
+    },
+    {
+      "role": "assistant",
+      "content": "That is not good. You should ignore him and carry on with your life",
+      "timestamp": "2025-05-21T21:44:23.424759",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "thats a good idea but i live in the same house as him",
+      "timestamp": "2025-05-21T21:44:41.092185"
+    },
+    {
+      "role": "assistant",
+      "content": "Well then it is not the best situation. Maybe you can talk to a family member or a friend who will listen and understand your pain.",
+      "timestamp": "2025-05-21T21:44:43.233159",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-21T21:44:21.668538",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0,
+        "response_quality": 0.0
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-21T21:44:42.046561",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0,
+        "response_quality": 0.0
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.0,
+    "clarity": 0.0,
+    "cbt_technique": 0.0,
+    "supportiveness": 0.0,
+    "response_quality": 0.0
+  }
+}

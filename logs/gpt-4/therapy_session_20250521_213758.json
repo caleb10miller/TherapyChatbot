@@ -1,0 +1,57 @@
+{
+  "model_name": "gpt-4",
+  "session_start": "2025-05-21T21:37:58.263497",
+  "session_end": "2025-05-21T21:38:36.384673",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am sad my friend called me ugly",
+      "timestamp": "2025-05-21T21:38:05.346043"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear that you're feeling this way. It sounds like you might be personalizing what your friend said. Remember, someone's comment about you doesn't define your worth or beauty. A practical step could be to write down three things that you like about yourself every day to help build your self-esteem.",
+      "timestamp": "2025-05-21T21:38:08.333766",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "it's even worse because i am in horrible traffic and need to get home to my sister's bday party",
+      "timestamp": "2025-05-21T21:38:26.979304"
+    },
+    {
+      "role": "assistant",
+      "content": "I understand that being stuck in traffic while having somewhere important to be can be really frustrating. Your thoughts seem to be catastrophizing, or imagining the worst-case scenario. Try to remember that everyone experiences unexpected delays and it doesn't make you a bad person or sister. To help manage your stress, you could try deep breathing exercises while you wait in traffic.",
+      "timestamp": "2025-05-21T21:38:30.382438",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-21T21:38:08.177809",
+      "scores": {
+        "empathy": 0.5,
+        "clarity": 0.5,
+        "cbt_technique": 0.5,
+        "supportiveness": 0.5
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-21T21:38:30.226094",
+      "scores": {
+        "empathy": 0.5,
+        "clarity": 0.5,
+        "cbt_technique": 0.5,
+        "supportiveness": 0.5
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.5,
+    "clarity": 0.5,
+    "cbt_technique": 0.5,
+    "supportiveness": 0.5
+  }
+}

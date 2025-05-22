@@ -1,0 +1,57 @@
+{
+  "model_name": "ft:gpt-3.5-turbo-0125:personal::BWtfMrrB",
+  "session_start": "2025-05-21T21:39:23.259684",
+  "session_end": "2025-05-21T21:40:02.192639",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am sad my friend called me ugly",
+      "timestamp": "2025-05-21T21:39:31.786932"
+    },
+    {
+      "role": "assistant",
+      "content": "That is a very rude thing to say.  I am sure you are not ugly.",
+      "timestamp": "2025-05-21T21:39:34.759007",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "it's especially bad because i am in horrible traffic and need to get home to my sister's bday party",
+      "timestamp": "2025-05-21T21:39:53.573598"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry.  Why would they say that?  You should try to shake it off and enjoy yourself!",
+      "timestamp": "2025-05-21T21:39:55.545310",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-21T21:39:33.228796",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-21T21:39:54.420066",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.0,
+    "clarity": 0.0,
+    "cbt_technique": 0.0,
+    "supportiveness": 0.0
+  }
+}
