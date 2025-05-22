@@ -1,0 +1,57 @@
+{
+  "model_name": "ft:gpt-3.5-turbo-0125:personal::BWtfMrrB",
+  "session_start": "2025-05-21T20:33:26.521959",
+  "session_end": "2025-05-21T20:34:02.942262",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am sad because my friend called me ugly",
+      "timestamp": "2025-05-21T20:33:34.946088"
+    },
+    {
+      "role": "assistant",
+      "content": "That's not a friend.",
+      "timestamp": "2025-05-21T20:33:37.550943",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "why would they say that",
+      "timestamp": "2025-05-21T20:33:53.714735"
+    },
+    {
+      "role": "assistant",
+      "content": "I don't know. Some people are just mean.",
+      "timestamp": "2025-05-21T20:33:56.122934",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-21T20:33:36.424851",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-21T20:33:55.081983",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.0,
+    "clarity": 0.0,
+    "cbt_technique": 0.0,
+    "supportiveness": 0.0
+  }
+}

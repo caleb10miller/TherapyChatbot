@@ -1,0 +1,78 @@
+{
+  "model_name": "ft:gpt-3.5-turbo-0125:personal::BWtfMrrB",
+  "session_start": "2025-05-21T20:30:43.240725",
+  "session_end": "2025-05-21T20:32:03.620448",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "I am sad because my friend told me i'm ugly.",
+      "timestamp": "2025-05-21T20:30:59.510907"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear that. I'm sure you're not ugly.",
+      "timestamp": "2025-05-21T20:31:14.185918",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "that is difficult to believe when everyone says i am ugly",
+      "timestamp": "2025-05-21T20:31:28.668783"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear that. I'm sure you're not ugly.",
+      "timestamp": "2025-05-21T20:31:31.700657",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "how can i think about this more positively",
+      "timestamp": "2025-05-21T20:31:49.577183"
+    },
+    {
+      "role": "assistant",
+      "content": "I think you should just ignore them. They're probably just trying to get a rise out of you.",
+      "timestamp": "2025-05-21T20:31:56.582447",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-21T20:31:09.480084",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-21T20:31:30.544245",
+      "scores": {
+        "empathy": 1.0,
+        "clarity": 1.0,
+        "cbt_technique": 1.0,
+        "supportiveness": 1.0
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-21T20:31:50.952770",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.3333333333333333,
+    "clarity": 0.3333333333333333,
+    "cbt_technique": 0.3333333333333333,
+    "supportiveness": 0.3333333333333333
+  }
+}

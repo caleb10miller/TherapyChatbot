@@ -1,0 +1,78 @@
+{
+  "model_name": "ft:gpt-3.5-turbo-0125:personal::BWtfMrrB",
+  "session_start": "2025-05-21T21:21:25.460376",
+  "session_end": "2025-05-21T21:22:07.535537",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am sad my friend called me ugly",
+      "timestamp": "2025-05-21T21:21:31.728344"
+    },
+    {
+      "role": "assistant",
+      "content": "Have you talked to them about it?",
+      "timestamp": "2025-05-21T21:21:39.413692",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "yes we were talking when they called me an ugly pig",
+      "timestamp": "2025-05-21T21:21:50.271328"
+    },
+    {
+      "role": "assistant",
+      "content": "I am really sorry to hear that.  Was this a friend?",
+      "timestamp": "2025-05-21T21:21:52.818678",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "yes i already told you that",
+      "timestamp": "2025-05-21T21:21:58.615490"
+    },
+    {
+      "role": "assistant",
+      "content": "I am so sorry.  No one deserves to be treated like that.  How are you feeling?",
+      "timestamp": "2025-05-21T21:22:01.932519",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-21T21:21:38.276142",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-21T21:21:51.793396",
+      "scores": {
+        "empathy": 1.0,
+        "clarity": 1.0,
+        "cbt_technique": 1.0,
+        "supportiveness": 1.0
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-21T21:22:00.807520",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.3333333333333333,
+    "clarity": 0.3333333333333333,
+    "cbt_technique": 0.3333333333333333,
+    "supportiveness": 0.3333333333333333
+  }
+}

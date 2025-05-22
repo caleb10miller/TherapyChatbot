@@ -1,0 +1,36 @@
+{
+  "model_name": "ft:gpt-3.5-turbo-0125:personal::BWtfMrrB",
+  "session_start": "2025-05-21T20:36:40.800590",
+  "session_end": "2025-05-21T20:36:53.737537",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "hi i am sad because my friend called me ugly",
+      "timestamp": "2025-05-21T20:36:49.444748"
+    },
+    {
+      "role": "assistant",
+      "content": "I am sorry to hear that.  I am sure you are not ugly.",
+      "timestamp": "2025-05-21T20:36:51.189529",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-21T20:36:50.319754",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.0,
+    "clarity": 0.0,
+    "cbt_technique": 0.0,
+    "supportiveness": 0.0
+  }
+}

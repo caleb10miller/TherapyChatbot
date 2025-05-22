@@ -1,0 +1,36 @@
+{
+  "model_name": "gpt-4",
+  "session_start": "2025-05-21T21:20:26.601420",
+  "session_end": "2025-05-21T21:20:47.791619",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am sad my friend called me ugly",
+      "timestamp": "2025-05-21T21:20:33.216387"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear that you're feeling hurt by your friend's comment. This seems like a case of personalization, where you're taking their comment as a reflection of your worth. Let's challenge that thought: just because one person made a negative comment doesn't mean it defines who you are or your attractiveness. As a practical step, try discussing how this comment made you feel with your friend and establish boundaries for respectful communication in the future.",
+      "timestamp": "2025-05-21T21:20:37.626922",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-21T21:20:37.480802",
+      "scores": {
+        "empathy": 0.5,
+        "clarity": 0.5,
+        "cbt_technique": 0.5,
+        "supportiveness": 0.5
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.5,
+    "clarity": 0.5,
+    "cbt_technique": 0.5,
+    "supportiveness": 0.5
+  }
+}
