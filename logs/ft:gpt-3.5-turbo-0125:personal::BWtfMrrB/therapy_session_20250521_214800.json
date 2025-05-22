@@ -1,0 +1,60 @@
+{
+  "model_name": "ft:gpt-3.5-turbo-0125:personal::BWtfMrrB",
+  "session_start": "2025-05-21T21:48:00.224171",
+  "session_end": "2025-05-21T21:48:52.583991",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am sad my friend called me ugly",
+      "timestamp": "2025-05-21T21:48:05.986296"
+    },
+    {
+      "role": "assistant",
+      "content": "That's not a good friend. They are supposed to lift you up, not bring you down.",
+      "timestamp": "2025-05-21T21:48:09.552677",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "yeah its messed up",
+      "timestamp": "2025-05-21T21:48:16.423986"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry. Are you ok?",
+      "timestamp": "2025-05-21T21:48:19.652114",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-21T21:48:08.690776",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0,
+        "response_quality": 0.0
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-21T21:48:18.381126",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0,
+        "response_quality": 0.0
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.0,
+    "clarity": 0.0,
+    "cbt_technique": 0.0,
+    "supportiveness": 0.0,
+    "response_quality": 0.0
+  }
+}

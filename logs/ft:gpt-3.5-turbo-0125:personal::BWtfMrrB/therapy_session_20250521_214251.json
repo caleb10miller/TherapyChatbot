@@ -1,0 +1,82 @@
+{
+  "model_name": "ft:gpt-3.5-turbo-0125:personal::BWtfMrrB",
+  "session_start": "2025-05-21T21:42:51.720976",
+  "session_end": "2025-05-21T21:43:36.838076",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am sad my friend called me ugly",
+      "timestamp": "2025-05-21T21:42:58.201827"
+    },
+    {
+      "role": "assistant",
+      "content": "Why would they do that? People can be so mean.",
+      "timestamp": "2025-05-21T21:43:01.504739",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "they are jealous of my skills",
+      "timestamp": "2025-05-21T21:43:14.255141"
+    },
+    {
+      "role": "assistant",
+      "content": "that's just sad. some people can be so rude",
+      "timestamp": "2025-05-21T21:43:16.477616",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "i know right. how can i think about this differently",
+      "timestamp": "2025-05-21T21:43:29.570017"
+    },
+    {
+      "role": "assistant",
+      "content": "This is true. You can think about it as them being jealous of your skill",
+      "timestamp": "2025-05-21T21:43:31.915200",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-21T21:43:00.311846",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0,
+        "response_quality": 0.0
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-21T21:43:15.539827",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0,
+        "response_quality": 0.0
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-21T21:43:30.813092",
+      "scores": {
+        "empathy": 0.0,
+        "clarity": 0.0,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.0,
+        "response_quality": 0.0
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.0,
+    "clarity": 0.0,
+    "cbt_technique": 0.0,
+    "supportiveness": 0.0,
+    "response_quality": 0.0
+  }
+}
