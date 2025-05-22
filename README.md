@@ -131,6 +131,34 @@ MODEL_NAME=ft:gpt-3.5-turbo:your-org:your-model-id
 └── README.md       # Project documentation
 ```
 
+## Branching Strategy
+
+The project follows a three-branch strategy:
+
+- **main**: Development branch for ongoing work and feature development
+- **uat**: User Acceptance Testing branch for testing and validation
+- **prod**: Production branch for stable, released code
+
+### Branch Workflow
+
+1. Development work happens on `main`
+2. When features are ready for testing:
+   ```bash
+   git checkout uat
+   git pull origin main
+   ```
+3. After testing and validation:
+   ```bash
+   git checkout prod
+   git pull origin uat
+   ```
+
+### Branch Protection
+
+- `prod` branch is protected and requires pull request reviews
+- `uat` branch is used for integration testing
+- `main` branch is used for active development
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details. 
