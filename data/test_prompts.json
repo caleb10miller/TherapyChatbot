@@ -1,0 +1,54 @@
+{
+  "prompts": [
+    {
+      "id": 1,
+      "user_input": "I feel like I'm a failure no matter what I do.",
+      "category": "emotional_validation"
+    },
+    {
+      "id": 2,
+      "user_input": "I overthink everything and can't fall asleep.",
+      "category": "practical_support"
+    },
+    {
+      "id": 3,
+      "user_input": "Everything always goes wrong in my life.",
+      "category": "cognitive_distortion"
+    },
+    {
+      "id": 4,
+      "user_input": "No one will ever love me because I'm not good enough.",
+      "category": "irrational_thoughts"
+    },
+    {
+      "id": 5,
+      "user_input": "I can't stop worrying about my future.",
+      "category": "anxiety"
+    },
+    {
+      "id": 6,
+      "user_input": "I feel like I'm always disappointing everyone.",
+      "category": "emotional_validation"
+    },
+    {
+      "id": 7,
+      "user_input": "I keep making the same mistakes over and over.",
+      "category": "cognitive_distortion"
+    },
+    {
+      "id": 8,
+      "user_input": "How do I stop being so hard on myself?",
+      "category": "practical_support"
+    },
+    {
+      "id": 9,
+      "user_input": "I feel like I'm not making any progress in therapy.",
+      "category": "emotional_validation"
+    },
+    {
+      "id": 10,
+      "user_input": "I can't shake the feeling that something bad will happen.",
+      "category": "anxiety"
+    }
+  ]
+} 
