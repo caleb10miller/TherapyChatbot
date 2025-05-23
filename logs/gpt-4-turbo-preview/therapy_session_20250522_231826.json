@@ -1,0 +1,60 @@
+{
+  "model_name": "gpt-4-turbo-preview",
+  "session_start": "2025-05-22T23:18:26.450298",
+  "session_end": "2025-05-22T23:25:23.559069",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am so sad! my stupid mom wont let me go to the prom after-party. prom night is supposed to be the BEST night of my life, and e me my first kiss!!!",
+      "timestamp": "2025-05-22T23:21:14.334631"
+    },
+    {
+      "role": "assistant",
+      "content": "It's understandable to feel sad when something you were looking forward to doesn't go as planned. It seems like you're experiencing \"catastrophizing,\" where you anticipate the worst possible outcome from a situation. Remember, while missing the after-party is disappointing, it doesn't mean your entire prom night or future romantic experiences are ruined. A practical step could be to plan a special event for another day with friends or someone special, creating your own memorable experience.",
+      "timestamp": "2025-05-22T23:21:21.042619",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "",
+      "timestamp": "2025-05-22T23:21:23.597402"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like you might not have shared what's on your mind yet. If you're feeling down or troubled about something, feel free to share, and I can help you work through those thoughts.",
+      "timestamp": "2025-05-22T23:21:27.543147",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-22T23:21:18.693809",
+      "scores": {
+        "empathy": 0.7,
+        "clarity": 0.85,
+        "cbt_technique": 0.8,
+        "supportiveness": 0.75,
+        "response_quality": 0.8
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-22T23:21:25.444021",
+      "scores": {
+        "empathy": 0.49,
+        "clarity": 0.7,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.49,
+        "response_quality": 0.69
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.595,
+    "clarity": 0.7749999999999999,
+    "cbt_technique": 0.4,
+    "supportiveness": 0.62,
+    "response_quality": 0.745
+  }
+}
