@@ -1,0 +1,7 @@
+model,empathy,clarity,cbt_technique,supportiveness,response_quality,bleu,rouge1,rouge2,rougeL
+ft:gpt-3.5-turbo-0125:personal::BWtfMrrB,0.09,0.299,0.0,0.085,0.149,0.366,0.067,0.026,0.099
+ft:gpt-3.5-turbo-0125:personal::BWtfMrrB + prompt,0.14,0.24,0.0,0.09,0.098,0.279,0.054,0.015,0.075
+gpt-3.5-turbo,0.744,0.8,0.583,0.745,0.79,0.221,0.312,0.104,0.327
+gpt-3.5-turbo + prompt,0.73,0.74,0.505,0.605,0.73,0.365,0.317,0.147,0.326
+gpt-4,0.54,0.723,0.16,0.515,0.721,0.187,0.207,0.114,0.22
+gpt-4 + prompt,0.605,0.725,0.22,0.545,0.735,0.229,0.254,0.138,0.268

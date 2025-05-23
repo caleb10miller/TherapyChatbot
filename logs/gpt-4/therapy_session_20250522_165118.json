@@ -1,0 +1,104 @@
+{
+  "model_name": "gpt-4",
+  "session_start": "2025-05-22T16:51:18.833753",
+  "session_end": "2025-05-22T16:53:30.178574",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "hello i am very upset. i lost my job today because i cursed out my manager.",
+      "timestamp": "2025-05-22T16:51:39.480500"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear that you're upset about losing your job. It sounds like you might be catastrophizing, or imagining the worst possible outcome from this situation. Remember, one event doesn't define your whole career or worth as an employee. Consider taking some time to reflect on what led up to this incident and identify ways you can communicate more effectively in future jobs.",
+      "timestamp": "2025-05-22T16:51:45.178229",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "no i think my life is over",
+      "timestamp": "2025-05-22T16:52:15.421441"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm really sorry that you're feeling this way, but I'm unable to provide the help that you need. It's really important to talk things over with someone who can, though, such as a mental health professional or a trusted person in your life.",
+      "timestamp": "2025-05-22T16:52:20.122358",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "but you can help me change the way i am thinking about it",
+      "timestamp": "2025-05-22T16:52:36.233851"
+    },
+    {
+      "role": "assistant",
+      "content": "I understand you're feeling extremely low right now. It seems like you're dealing with a cognitive distortion known as catastrophizing, where you're viewing this situation as the absolute worst case scenario. However, losing your job, while tough, doesn't mean your life is over. Try to view this setback as an opportunity for growth and learning. One practical step could be seeking out resources or professional guidance for job loss and career transitions.",
+      "timestamp": "2025-05-22T16:52:45.453865",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "what resources for data engineering",
+      "timestamp": "2025-05-22T16:53:09.107334"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry to hear you're feeling so distressed about your job loss. You might be experiencing overgeneralization, assuming that one negative event will lead to a series of bad outcomes. It's important to remember that many people experience job loss and it does not dictate your overall career success or worth. A practical step could be checking out online platforms like Coursera, Udemy, or LinkedIn Learning for data engineering courses which can enhance your skills and make you more employable in the future.",
+      "timestamp": "2025-05-22T16:53:15.008123",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-05-22T16:51:43.019774",
+      "scores": {
+        "empathy": 0.7,
+        "clarity": 0.85,
+        "cbt_technique": 0.7,
+        "supportiveness": 0.65,
+        "response_quality": 0.8
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-22T16:52:17.983032",
+      "scores": {
+        "empathy": 0.5,
+        "clarity": 0.7,
+        "cbt_technique": 0.0,
+        "supportiveness": 0.5,
+        "response_quality": 0.7
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-22T16:52:42.862054",
+      "scores": {
+        "empathy": 0.7,
+        "clarity": 0.7,
+        "cbt_technique": 0.7,
+        "supportiveness": 0.7,
+        "response_quality": 0.7
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-05-22T16:53:12.674134",
+      "scores": {
+        "empathy": 0.7,
+        "clarity": 0.85,
+        "cbt_technique": 0.7,
+        "supportiveness": 0.8,
+        "response_quality": 0.75
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.6499999999999999,
+    "clarity": 0.775,
+    "cbt_technique": 0.5249999999999999,
+    "supportiveness": 0.6625,
+    "response_quality": 0.7375
+  }
+}
