@@ -1,0 +1,12 @@
+# Environment variables
+.env
+
+# Python
+__pycache__/
+DS_Store
+
+# Virtual Environment
+venv/
+
+# Project specific
+FinalProjectGuidelines.pdf
