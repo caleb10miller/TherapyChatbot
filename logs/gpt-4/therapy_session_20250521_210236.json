@@ -1,0 +1,14 @@
+{
+  "model_name": "gpt-4",
+  "session_start": "2025-05-21T21:02:36.391237",
+  "session_end": "2025-05-21T21:02:41.096059",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am sad my friend called me ugly",
+      "timestamp": "2025-05-21T21:02:41.095242"
+    }
+  ],
+  "session_scores": [],
+  "average_scores": {}
+}
