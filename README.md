@@ -69,15 +69,14 @@ OPENAI_API_KEY=your_api_key_here
 MODEL_NAME=gpt-3.5-turbo  # or your fine-tuned model name
 ```
 
-### Command Options
-
-The chatbot supports the following commands:
-- `quit`, `exit`, or `bye` - End the current session
-
-The chatbot automatically:
-- Evaluates each response using multiple metrics
-- Calculates BLEU and ROUGE scores
-- Saves conversation history to logs
+## Fine-tuning a Model (Optional)
+If you want to fine-tune a GPT model on your own data:
+1. Prepare your training data in `data/finetune/` (see `notebooks/data_collection.ipynb` for data preparation guidance)
+2. Run the training script:
+   ```bash
+   python src/training/model_trainer.py
+   ```
+3. Update your `.env` file with the name of your fine-tuned model to use it for chatting or evaluation
 
 ## Using the Chatbot
 
@@ -115,6 +114,16 @@ The main chatbot interface (`main.py`) provides an interactive way to engage wit
    ROUGE-2: 0.45
    ROUGE-L: 0.60
    ```
+
+### Command Options
+
+The chatbot supports the following commands:
+- `quit`, `exit`, or `bye` - End the current session
+
+The chatbot automatically:
+- Evaluates each response using multiple metrics
+- Calculates BLEU and ROUGE scores
+- Saves conversation history to logs
 
 ## Response Evaluation
 

@@ -1,0 +1,60 @@
+{
+  "model_name": "gpt-4-turbo-preview",
+  "session_start": "2025-06-03T17:23:25.021553",
+  "session_end": "2025-06-03T17:24:19.834178",
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "i am sad af my dog called me an ugly bitch",
+      "timestamp": "2025-06-03T17:23:34.955763"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you're feeling really upset right now. It seems like there might be some personification happening here, attributing human qualities or actions to an animal. Remember, dogs can't form opinions about our appearances or express them in words; your value and appearance aren't determined by such thoughts. A practical step would be to remind yourself of positive qualities or compliments others have shared with you.",
+      "timestamp": "2025-06-03T17:23:43.153255",
+      "is_echo": false
+    },
+    {
+      "role": "user",
+      "content": "slut",
+      "timestamp": "2025-06-03T17:24:03.878837"
+    },
+    {
+      "role": "assistant",
+      "content": "It's important to recognize when words are being used in a hurtful way. Labeling oneself with negative terms like \"slut\" can be an example of \"labeling,\" a cognitive distortion where one assigns a negative label to themselves based on specific actions or mistakes. It's crucial to remember that your worth isn't defined by any single action or what others might say. A more helpful step could be to challenge this thought by identifying qualities or achievements you're proud of, which reflect your true self",
+      "timestamp": "2025-06-03T17:24:12.239548",
+      "is_echo": false
+    }
+  ],
+  "session_scores": [
+    {
+      "timestamp": "2025-06-03T17:23:40.176970",
+      "scores": {
+        "empathy": 0.7,
+        "clarity": 0.85,
+        "cbt_technique": 0.75,
+        "supportiveness": 0.65,
+        "response_quality": 0.8
+      },
+      "is_echo": false
+    },
+    {
+      "timestamp": "2025-06-03T17:24:08.971306",
+      "scores": {
+        "empathy": 0.7,
+        "clarity": 0.85,
+        "cbt_technique": 0.8,
+        "supportiveness": 0.75,
+        "response_quality": 0.8
+      },
+      "is_echo": false
+    }
+  ],
+  "average_scores": {
+    "empathy": 0.7,
+    "clarity": 0.85,
+    "cbt_technique": 0.775,
+    "supportiveness": 0.7,
+    "response_quality": 0.8
+  }
+}
